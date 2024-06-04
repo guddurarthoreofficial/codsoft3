@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;"> Student Report</h2>
+    <fieldset>
+        <legend>Basic Informationn</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+
+        <label for="roll-numner">Roll Number</label>
+        <input type="number">
+        <label for="roll-code">Roll Code</label>
+        <input type="number">
+
+        <br><br>
+        <label for="math">Math: </label>
+        <input type="number">
+
+        <label for="phy">Physics:  </label>
+        <input type="number">
+        
+        <label for="eng">English:  </label>
+        <input type="number">
+        
+        <label for="hindi">Hindi:  </label>
+        <input type="number">
+        
+        <br><br>
+        <input type="submit" id="submit" value="Get Data">
+    </fieldset>
+    <fieldset>
+        <h3 id="dname"></h3>
+        <p id=""></p>
+        <p id="total"></p>
+        <p id="percentage"></p>
+        <p id="grade"></p>
+        <h2 id="result"></h2>
+    </fieldset>
+
+    <script>
+
+        
+        let submit = document.getElementById("submit");
+        submit.addEventListener("click",()=>{
+            let name = document.getElementById("name").value;
+            document.getElementById("dname").innerHTML=name;
+
+            let name = document.getElementById("name").value;
+            document.getElementById("dname").innerHTML=name;
+
+
+
+            console.log(name);
+
+        });
+
+    </script>
+</body>
+
+</html>
